@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f7fe;
+  background-image: url(/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-x: 180px;
+  background-position-y: -40px;
+  background-attachment: fixed;
+}
+
+/* --- heading ---*/
+
+h1,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 64px;
+  color: #6e728e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Toggle button & section ---*/
+
+.toggle-btn {
+  width: 56px;
+  height: 32px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn > .inner-circle {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 4px 0 4px;
+  transition: ease-in 0.28s;
+}
+
+.toggle-btn > .inner-circle.active {
+  margin: 0 4px 0 28px;
+  transition: ease-in 0.28s;
+}
+
+.toggle {
+  margin: 40px 0 32px 0;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn:hover {
+  transition: ease-in 0.2s;
+  opacity: 0.5;
+}
+
+.toggle p {
+  color: #6e728e;
+  font-size: 15px;
+}
+
+.toggle p:first-child {
+  margin-right: 24px;
+}
+
+.toggle p:last-child {
+  margin-left: 24px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- CTA --- */
+
+.cta .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 327px;
+  height: 453px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.line {
+  border: 1px solid rgba(110, 114, 142, 0.25);
+  width: 269px;
+  margin: 12px 0 12px 0;
+}
+
+.cta .box .plan {
+  font-size: 18px;
+  margin: 31px 0 24px 0;
+  color: #6e728e;
+}
+
+.cta .box .pricing {
+  font-size: 72px;
+  color: #4a4d60;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cta .box span {
+  font-size: 40px;
+  color: #4a4d60;
+  margin-right: 7.46px;
+}
+
+.cta .box p {
+  font-size: 15px;
+  color: #6e728e;
+}
+
+.cta .box a {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 82.31px 14px 81.69px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 6px;
+  color: #ffffff;
+  letter-spacing: 1.39286px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* --- CTA BOX PROFESSIONAL */
+
+.cta .box.professional {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.cta .box.professional a {
+  background: #ffffff;
+  color: #6d72de;
+}
+
+.cta .box.professional .plan {
+  color: #ffffff;
+}
+
+.cta .box.professional .line {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cta .box.professional p {
+  color: #ffffff;
+}
+
+.cta .box.professional .pricing {
+  color: #ffffff;
+}
+
+.cta .box.professional span {
+  font-size: 40px;
+  color: #ffffff;
+  margin-right: 7.46px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .cta {
+    flex-direction: row;
+  }
+
+  .cta .box.professional {
+    height: 501px;
+  }
+
+  .cta .box.professional .plan {
+    margin-top: 55px;
+  }
+  body {
+    background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+} ;

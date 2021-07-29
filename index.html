@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Pricing component with toggle</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Our Pricing</h1>
+    <section class="toggle">
+      <p>Annually</p>
+      <div class="container" id="toggle">
+        <div class="toggle-btn">
+          <div class="inner-circle" id="circle"></div>
+        </div>
+      </div>
+      <p>Monthly</p>
+    </section>
+    <section class="cta">
+      <div class="box basic" id="box">
+        <p class="plan">Basic</p>
+        <p class="pricing" id="basic"><span>$</span>199.99</p>
+        <div class="line"></div>
+        <p>500 Gb Storage</p>
+        <div class="line"></div>
+        <p>2 users Allowed</p>
+        <div class="line"></div>
+        <p>Send up to 3 GB</p>
+        <div class="line"></div>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+      <div class="box professional" id="box">
+        <p class="plan">Professional</p>
+        <p class="pricing" id="professional"><span>$</span>249.99</p>
+        <div class="line"></div>
+        <p>1 TB Storage</p>
+        <div class="line"></div>
+        <p>5 users Allowed</p>
+        <div class="line"></div>
+        <p>Send up to 10 GB</p>
+        <div class="line"></div>
+        <a href="#" class="btn light">Learn more</a>
+      </div>
+      <div class="box master" id="box">
+        <p class="plan">Master</p>
+        <p class="pricing" id="master"><span>$</span>399.99</p>
+        <div class="line"></div>
+        <p>2 TB Storage</p>
+        <div class="line"></div>
+        <p>10 users Allowed</p>
+        <div class="line"></div>
+        <p>Send up to 20 GB</p>
+        <div class="line"></div>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+    </section>
+  </main>
+  <script src="/js/index.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alexander Rezaei</a>.
+  </div>
+</body>
+</html>
