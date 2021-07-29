@@ -135,6 +135,8 @@ main {
   color: #6e728e;
 }
 
+/* Buttons */
+
 .cta .box a {
   display: block;
   font-size: 13px;
@@ -149,15 +151,27 @@ main {
   margin-top: 20px;
 }
 
-/* --- CTA BOX PROFESSIONAL */
-
-.cta .box.professional {
-  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+.cta .box a:hover {
+  color: #6d72de;
+  background: #ffffff;
+  border: 1px solid #6d72de;
 }
 
 .cta .box.professional a {
   background: #ffffff;
   color: #6d72de;
+}
+
+.cta .box.professional a:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* --- CTA BOX PROFESSIONAL */
+
+.cta .box.professional {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 .cta .box.professional .plan {
